@@ -36,3 +36,11 @@
     display: flex;
     justify-content: center;
 }
+
+.pages input{
+    text-align: center;
+}
+
+.pages div{
+    margin-right: 10px;
+}

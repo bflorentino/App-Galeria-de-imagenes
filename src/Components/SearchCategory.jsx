@@ -6,14 +6,14 @@ import { useForm } from '../Hooks/useForm';
 
 const SearchCategory = ( { setImages, setViewMode } ) => {
 
-    const [ formState, handleInputChange, setForm ] = useForm("");
+    const [ formState, handleInput, setForm ] = useForm({searcher:""});
 
     const handleSubmit = e =>  {
         e.preventDefault();
-        getPicturesByCategory( formState )
+        getPicturesByCategory( formState.searcher )
             .then(images =>{
                 setImages(images);
-                setForm("");
+                setForm("", "searcher");
                 setViewMode();
             }); 
     }
@@ -26,8 +26,10 @@ const SearchCategory = ( { setImages, setViewMode } ) => {
                 id='input-searcher'
                 className='input-category white-searcher'
                 placeholder='Buscar por categoría'
-                value={ formState }
-                onChange={ handleInputChange }
+                name='searcher'
+                value={ formState.searcher }
+                autoComplete = 'off'
+                onChange={ handleInput }
             />
             <button 
                 type='submit' 
