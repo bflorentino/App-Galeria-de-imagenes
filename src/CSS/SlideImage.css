@@ -1,0 +1,38 @@
+.slider{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin:15px;
+    
+}
+
+.slider .img-slide{
+    width: 99%;
+    height: 600px;
+}
+
+.slider .img-slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.slider .control button {
+    font-size: 40px;
+    padding: 15px;
+    border-radius: 25%;
+    opacity: 0;
+    overflow: hidden;
+    border: none;
+}
+
+.slider .control button:hover{
+    cursor: pointer;
+    background-color: #F2F2F2;;
+    opacity: 1;
+}
+
+.pages{
+    display: flex;
+    justify-content: center;
+}

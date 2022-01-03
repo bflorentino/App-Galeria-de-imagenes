@@ -1,0 +1,43 @@
+/*Dark mode settings*/
+.dark-root{
+    background-color: #212121;
+}
+
+.dark-searcher{
+    background-color: #2B2B2B;
+}
+
+.dark-header {
+    background-color: #212121;
+    border-color: #fff;
+}
+
+.dark-lbl {
+    color: #fff;
+}
+
+.dark-h1{
+    color: #fff;
+}
+
+/* White Mode settings */
+.white-root{
+    background-color: #fff;
+}
+
+.white-searcher{
+    background-color: #F2F2F2;
+}
+
+.white-header {
+    background-color: #fff;
+    border-color: #000;
+}
+
+.white-h1{
+    color: #000;
+}
+
+.white-lbl{
+    color: #000;
+}
