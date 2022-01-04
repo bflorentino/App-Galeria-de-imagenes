@@ -44,3 +44,61 @@
 .pages div{
     margin-right: 10px;
 }
+
+/* Responsive Design  */
+
+@media screen and (max-width: 768px) {
+    .slider .img-slide{
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .slider .img-slide{
+        height: 300px;
+    }
+}
+
+    @media screen and (max-width: 440px) {
+        .slider{
+            margin-left: 0;
+        }
+        .slider .img-slide{
+            height: 200px;
+            margin:0px;
+        }
+        .slider .control button {
+            font-size: 20px;
+            padding: 5px;
+        }
+
+        .pages input{
+            width: 40px;
+            font-size: 10px;
+        }
+
+        .lbl{
+            font-size: 10px;
+        }
+}
+
+
+@media screen and (max-width: 340px) {
+    .slider .img-slide{
+        height: 150px;
+        margin:0px;
+    }
+
+    .pages input{
+        width: 35px;
+        font-size: 6px;
+    }
+
+    .pages input[type="checkbox"]{
+        height: 8px;
+    }
+
+    .pages .lbl{
+        font-size: 6px;
+    }
+}

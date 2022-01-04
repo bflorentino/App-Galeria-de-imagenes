@@ -16,4 +16,24 @@
 .grid-image img {
     width: 100%;
     height: 100%;
+} 
+
+/* Responsive Design  */
+
+@media screen and (max-width: 977px) {
+    .grid-image {
+        width:45%;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .grid-image {
+        width:100%;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .grid-image {
+        height: 200px;
+    }
 }

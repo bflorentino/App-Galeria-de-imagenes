@@ -32,3 +32,33 @@
 .form-search-category button:hover{
     cursor: pointer;;
 }
+
+/* Responsive Design  */
+
+@media screen and (max-width: 1010px) {
+    .form-search-category button{
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 440px) {
+
+    .form-search-category input{
+        padding: 8px;
+    }
+
+    .form-search-category input::placeholder{
+        font-size: 10px;
+    }
+
+    .form-search-category{
+        margin: 0;
+    }
+
+    .form-search-category button{
+        width: 35%;
+        margin-left: 5px;
+        font-size: 10px;
+        padding: 10px;
+    }
+}
