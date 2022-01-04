@@ -64,11 +64,11 @@ const Slider = ( { images } ) => {
 
     useEffect(() => {
         if(!timercheck || countChanged){
-            clearInterval(timerRef.current);
+            clearInterval(timer);
             setTimerRunning(false);
             setCountChanged(false);
         }
-    }, [timercheck, countChanged, setCountChanged])
+    }, [timercheck, countChanged, setCountChanged, timer])
 
     useEffect(() => {
         return () => clearInterval(timerRef.current);
